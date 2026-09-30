@@ -1,0 +1,26 @@
+# ==========================================================
+# 本程序：不需要安装任何第三方库
+# ==========================================================
+#
+# 说明：
+#   main.py / crawler.py / organizer.py / state.py / email_sender.py
+#   只用了 Python 自带的标准库：
+#       urllib、re、smtplib、email、datetime、json、locale
+#   所以这里没有需要 pip install 的包。
+#
+#   也就是说：装好 Python 之后，直接 python main.py 就能跑。
+#
+#   连「按拼音首字母排序」用的也是 Windows 自带的中文排序规则
+#   （Python 标准库 locale），所以不需要 pypinyin 之类的拼音库。
+#
+#   这样设计还有一个好处：不会往 C 盘装任何东西。
+#
+#
+# 为了以后扩展（可选，现在不用装）：
+#   requests          更省心的网络请求库
+#   beautifulsoup4    更省心的 HTML 解析库
+#   lxml              beautifulsoup4 的高性能解析后端
+#   pypinyin          更精确的拼音处理（目前用系统排序就够了）
+#
+# 如果以后想换成 requests + beautifulsoup4 的写法，再执行：
+#   pip install requests beautifulsoup4
